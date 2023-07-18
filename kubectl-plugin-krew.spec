@@ -47,4 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc CONTRIBUTING.md README.md docs/*.md
 %attr(755,root,root) %{_bindir}/kubectl-krew
