@@ -1,17 +1,17 @@
-%define		vendor_version	0.4.4
+%define		vendor_version	0.4.5
 
 Summary:	kubectl plugin manager
 Name:		kubectl-plugin-krew
-Version:	0.4.4
+Version:	0.4.5
 Release:	1
 License:	Apache v2.0
 Group:		Applications
 Source0:	https://github.com/kubernetes-sigs/krew/archive/v%{version}/krew-%{version}.tar.gz
-# Source0-md5:	9cfb953f336f58925478dd943fa379a9
+# Source0-md5:	c205efe707b700d7b0a4ce4c0af75cb8
 Source1:	krew-vendor-%{vendor_version}.tar.xz
-# Source1-md5:	33c86903355e2205b96962eb818b0567
+# Source1-md5:	831c8142261c637e340fe12fba4e2254
 URL:		https://krew.sigs.k8s.io
-BuildRequires:	golang >= 1.20
+BuildRequires:	golang >= 1.22
 BuildRequires:	rpmbuild(macros) >= 2.009
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
