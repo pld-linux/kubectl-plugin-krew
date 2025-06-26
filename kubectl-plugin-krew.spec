@@ -19,7 +19,7 @@ Requires:	kubectl >= 1.12
 ExclusiveArch:	%go_arches
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_debugsource_packages	0
+%undefine	_debugsource_packages
 
 %description
 Krew is the plugin manager for kubectl command-line tool.
